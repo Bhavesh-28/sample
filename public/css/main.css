@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header{
+    height: 15vh;
+    width: 100vw;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.header p{
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    /* color: aqua; */
+    margin-top: 1vh;
+}
+
+.mainform{
+    height: 60vh;
+    width: 22vw;
+    margin: 2vh auto 8vh;
+    background-color: rgb(177, 177, 177);
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border: 1px solid rgb(68, 127, 255);
+}
+
+.form{
+    height: 80vh;
+    width: 100vw;
+}
+
+.form-1{
+    padding: 3vh 2vw;
+}
+
+label{
+    margin-bottom: 1vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+input{
+    border: none;
+    margin-bottom: 2.5vh;
+}
+
+.txt{
+    height: 4vh;
+    width: 16vw;
+    padding: 1vh 1vw;
+}
+
+.buttondiv{
+    width: 18vw;
+    height: 4vh;
+    text-align: center;
+}
+
+input[type="submit"]{
+    height: 4vh;
+    width: 10vw;
+    background-color: rgb(68, 127, 255);
+    color: white;
+    padding: .5vh .5vw;
+    border-radius: 5%;
+}
+
+.popUP{
+    text-align: center;
+    height: 80vh;
+    width: 40vw;
+    padding: 30vh 0;
+    margin: auto;
+}
+
+.popUP p{
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(9, 238, 9, 0.897);
+}
+
+.footer{
+    height: 10vh;
+    width: 100vw;
+    /* border: 1px solid red; */
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    color:rgb(177, 177, 177);
+}
+
+.footer p{
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    /* color: aqua; */
+    margin-top: 1.5vh;
+}
+
+@media (max-width: 850px){
+    .mainform{
+        height: 60vh;
+        width: 30vw;
+    }
+    .txt{
+        width: 24vw;
+    }
+    .buttondiv{
+        width: 26vw;
+    }
+}
+
+@media (max-width: 600px){
+    .mainform{
+        width: 100vw;
+        margin: 1.5vh 0 8vh;
+        border-radius: 0;
+        text-align: center;
+    }
+    .txt{
+        width: 50vw;
+    }
+    .buttondiv{
+        width: 100vw;
+        /* text-align: center; */
+    }
+    .form{
+        padding: 0;
+    }
+}
+
+@media (max-width: 600px){
+    .txt{
+        width: 90vw;
+    }
+    input[type="submit"]{
+        width: 5rem;
+    }
+}
+
+@media (max-width: 400px){
+    .header p{
+        font-size: 2rem;
+    }
+    .footer p{
+        font-size: 1rem;
+    }
+    .popUP{
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="form">
+        <% if(Reg===true) { %>
+            <div class="mainform">
+                <form method="post" action="/" class="form-1">
+                    <label>Name: </label> <br />
+                    <input type="text" name="name" class="txt" placeholder="enter your name" required> <br />
+                    <label>Email: </label> <br />
+                    <input type="email" name="email" class="txt" placeholder="enter your email" required> <br />
+                    <label>Password: </label> <br />
+                    <input type="password" name="pass" class="txt" placeholder="create a password" required> <br />
+                    <div class="buttondiv">
+                        <input type="submit" value="SUBMIT" class="submitbutton">
+                    </div>
+                </form>
+            </div>
+            <% } else { %>
+                <div class="popUP">
+                    <p>✔ Successfully Registered!</p>
+                </div>
+                <% } %>
+    </div>
+    <!-- <script>
+        let form = document.querySelector('.form')
+        let popUP = document.querySelector('.popUP').style.display = "none"
+        const submit = document.querySelector('.submitbutton')
+        submit.addEventListener('submit' , function(){
+            form.style.display = "none";
+            popUP.style.dispay = "block";
+        })
+    </script> -->
+</body>
+
+</html>
